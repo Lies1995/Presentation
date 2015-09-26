@@ -1,3 +1,8 @@
+%voeg 'backroundtitleslede' voor titleslidebackround
+%voeg 'backround' toe voor al de rest
+
+
+
 \documentclass[mathserif,11pt]{beamer}
 
 \mode<presentation> {
@@ -59,9 +64,9 @@
 
 \begin{document}
 
-\usebackgroundtemplate{%
- \includegraphics[width=\paperwidth
- ]{images/titleslide2}}
+%\usebackgroundtemplate{%
+ %\includegraphics[width=\paperwidth
+ %]{images/backroundtitleslide}}
 \begin{frame}
 \begin{columns}[c]
 
@@ -69,7 +74,7 @@
 	\column{.25\textwidth}
 	\vspace{1cm}
 
-   % \titlepage
+    \titlepage
 
 	\column{.5\textwidth}
 
@@ -78,24 +83,26 @@
 
 \end{frame}
 
-\usebackgroundtemplate{}
+%\usebackgroundtemplate{images/backround}
 
 %----------------------------------------------------------------------------------------
 %	PRESENTATION SLIDES
 %----------------------------------------------------------------------------------------
 \section{Section1}
 %------------------------------------------------
-		\begin{frame}{Title}
-			\footlineextra{Bron:}
+	\begin{frame}{Title}
+		\footlineextra{Bron:}
 
-		\end{frame}
+	\end{frame}
 
 %------------------------------------------------
+\section{Section2}
+%------------------------------------------------
 
-\begin{frame}{Section}
-  \footlineextra{Bron:}
+    \begin{frame}{Title}
+      \footlineextra{Bron:}
 
-\end{frame}
+    \end{frame}
 
 %------------------------------------------------
 \section{}
@@ -108,7 +115,7 @@
 \newblock  \emph{Warrington and Halton Hospitals}, 2015 Mei 10
 \newblock \url{http://www.warringtonandhaltonhospitals.nhs.uk/ServiceCatInfo.asp?id=5}
 \end{thebibliography}
-}
+
 \end{frame}
 
 \end{document}
